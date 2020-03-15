@@ -1,4 +1,9 @@
+import arrays_2.CyclicRotation;
+import arrays_2.OddOccurrencesInArray;
+import iterations_1.BinaryGap;
 import org.junit.Test;
+import timeComplexity_3.FrogJmp;
+import timeComplexity_3.PermMissingElem;
 
 import static org.junit.Assert.assertEquals;
 
