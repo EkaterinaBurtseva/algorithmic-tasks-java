@@ -1,5 +1,6 @@
 import arrays_2.CyclicRotation;
 import arrays_2.OddOccurrencesInArray;
+import countringElements_4.FrogRiverOne;
 import iterations_1.BinaryGap;
 import org.junit.Test;
 import timeComplexity_3.FrogJmp;
@@ -14,6 +15,7 @@ public class AllTest {
     OddOccurrencesInArray oddOccurrencesInArray = new OddOccurrencesInArray();
     FrogJmp frogJmp = new FrogJmp();
     PermMissingElem permMissingElem = new PermMissingElem();
+    FrogRiverOne frogRiverOne = new FrogRiverOne();
 
     @Test
     public void shouldFindBinaryGap() {
@@ -34,25 +36,32 @@ public class AllTest {
 
     @Test
     public void shouldCyclycRotationWork() {
-        int[] x =new int[]{2, 3,4};
+        int[] x = new int[]{2, 3, 4};
         cyclicRotation.solution(x, 2);
     }
 
     @Test
     public void shouldOccuranceInArrayWork() {
-        int[] x =new int[]{2, 6,4,2,6};
+        int[] x = new int[]{2, 6, 4, 2, 6};
         oddOccurrencesInArray.solution(x);
     }
 
     @Test
     public void shouldFrogJmpWork() {
-        frogJmp.solution(10,85,30);
+        frogJmp.solution(10, 85, 30);
     }
 
     @Test
     public void shouldPermMissingElemWork() {
-        int[] x =new int[]{1,2,4};
+        int[] x = new int[]{1, 2, 4};
         permMissingElem.solution2(x);
+    }
+
+    @Test
+    public void shouldFrogGetToTheAnotherRiverSide() {
+        int[] x = new int[]{1, 2, 4, 6, 8};
+        frogRiverOne.solution(5, x);
+
     }
 
 }
