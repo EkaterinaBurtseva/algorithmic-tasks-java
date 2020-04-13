@@ -11,29 +11,20 @@ Write an efficient algorithm for the following assumptions:
 N is an integer within the range [1..2,147,483,647].
 */
 
+import java.util.Collections;
+import java.util.List;
+
 public class BinaryGap {
     public void main(String[] args) {
+        List<String> list = Collections.singletonList(null);
+        System.out.println(list.isEmpty());
     }
 
     public int solution(int n) {
-        int binaryGapCount = 0;
-        String convertedBinary = Integer.toBinaryString(n);
-        int tmpCount = 0;
-        for (int i = 0; i < convertedBinary.length(); i++) {
-            if (convertedBinary.charAt(i) == '0') {
-                if (i > 0 && convertedBinary.charAt(i - 1) == '1') {
-                    tmpCount++;
-                } else {
-                    if (tmpCount > 0) tmpCount++;
-                }
-            } else if (convertedBinary.charAt(i) == '1') {
-                if (tmpCount > 0 && tmpCount > binaryGapCount) {
-                    binaryGapCount = tmpCount;
-                }
-                tmpCount = 0;
-            }
-        }
-        return binaryGapCount;
+        List<String> list = Collections.singletonList(null);
+        System.out.println(list.isEmpty());
+    }
+
 
 //        if (convertedBinary.contains("1")) {
 //
@@ -44,9 +35,6 @@ public class BinaryGap {
 //        }
 //
 //        return binaryGapCount;
-
-
-    }
 
 
 }
