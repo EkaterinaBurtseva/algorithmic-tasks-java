@@ -23,6 +23,7 @@ public class BinaryGap {
     public int solution(int n) {
         List<String> list = Collections.singletonList(null);
         System.out.println(list.isEmpty());
+        return 0;
     }
 
 
