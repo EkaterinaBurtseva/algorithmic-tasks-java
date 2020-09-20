@@ -3,7 +3,6 @@ package prefix_sums_5;
 //Find the minimal nucleotide from a range of sequence DNA.
 
 
-//Internet solution
 public class GenomicRangeQuery {
 
     public static void main(String[] args) {
